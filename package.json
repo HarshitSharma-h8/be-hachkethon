@@ -1,0 +1,33 @@
+{
+  "name": "be-hachethon",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000b\u0000e\u0000-\u0000h\u0000a\u0000c\u0000k\u0000e\u0000t\u0000h\u0000o\u0000n\u0000\r\u0000 \u0000",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarshitSharma-h8/be-hackethon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarshitSharma-h8/be-hackethon/issues"
+  },
+  "homepage": "https://github.com/HarshitSharma-h8/be-hackethon#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
