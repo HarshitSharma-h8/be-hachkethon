@@ -4,8 +4,8 @@ import cors from "cors";
 import connectDB from "./src/config/db.js";
 import authRoutes from "./src/routes/authRoutes.js";
 import userRoutes from "./src/routes/user.routes.js";
-import jobRoutes from "./routes/job.routes.js";
-import applicationRoutes from "./routes/application.routes.js";
+import jobRoutes from "./src/routes/job.routes.js";
+import applicationRoutes from "./src/routes/application.routes.js";
 
 dotenv.config();
 connectDB();

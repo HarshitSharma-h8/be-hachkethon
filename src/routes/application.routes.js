@@ -1,6 +1,6 @@
 import express from "express";
-import protect from "../middlewares/authMiddleware.js";
-import authorize from "../middlewares/authorize.js";
+import protect from "../middleware/authMiddleware.js";
+import authorize from "../middleware/authorize.js";
 import {
   applyToJob,
   getMyApplications,
