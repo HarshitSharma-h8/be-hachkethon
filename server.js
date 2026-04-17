@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import connectDB from "./src/config/db.js";
+// import connectDB from "./src/config/db.js";
 
 dotenv.config();
 
@@ -12,11 +12,11 @@ app.use(cors());
 app.use(express.json());
 
 // DB
-connectDB();
+// connectDB();
 
 // Routes
-import authRoutes from "./src/routes/authRoutes.js";
-app.use("/api/auth", authRoutes);
+// import authRoutes from "./src/routes/authRoutes.js";
+// app.use("/api/auth", authRoutes);
 
 // Test route
 app.get("/", (req, res) => {
