@@ -1,5 +1,5 @@
-import asyncHandler from "../middlewares/asyncHandler.js";
-import ApiError from "../middlewares/ApiError.js";
+import asyncHandler from "../middleware/asyncHandler.js";
+import ApiError from "./../utils/ApiError.js";
 import User from "../models/User.js";
 
 // ✅ GET /api/users/me
