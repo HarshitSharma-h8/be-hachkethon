@@ -1,4 +1,4 @@
-import ApiError from "./ApiError.js";
+import ApiError from "../utils/ApiError.js";
 
 // ✅ role-based access middleware
 const authorize = (...roles) => {
