@@ -1,21 +1,42 @@
 import mongoose from "mongoose";
 
-const jobSchema = new mongoose.Schema(
+const applicationSchema = new mongoose.Schema(
   {
-    title: String,
-    description: String,
-    employer: {
+    user: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
+    status: {
+      type: String,
+      enum: ["pending", "accepted", "rejected"],
+      default: "pending",
+    },
+  },
+  { timestamps: true }
+);
+
+const jobSchema = new mongoose.Schema(
+  {
+    title: String,
+
+    description: String,
+
     location: String,
-    salary: String,
-    skillsRequired: [String],
+
+    budget: Number,
+
     status: {
       type: String,
       enum: ["open", "closed"],
       default: "open",
     },
+
+    postedBy: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+    },
+
+    applications: [applicationSchema],
   },
   { timestamps: true }
 );
